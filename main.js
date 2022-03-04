@@ -4,7 +4,7 @@ console.log("is this working")
 // let prince = new Tamagotchi()  
 
 class Tamagotchi {
-    constructor(name, age, hunger, sleepiness, boredeom, play) {
+    constructor(name, age, hungry, sleepy, boredeom, play) {
         this.name = name;
         this.age = age;
         this.hungry = hungry;
@@ -18,9 +18,23 @@ class Tamagotchi {
 let prince = new Tamagotchi("Prince", 4, 2, 0, 1, 0);
 console.log(Tamagotchi);
 
+getName = (e) => {
+    e.preventDefault()
+    console.log(e.target.name.value);
+    console.log("Good Boy")
+}
+
+document.getElementById("prince").addEventListener("submit" , getName);
+
 const nameEl = document.getElementById("btn-name");
 const ageEl = document.getElementById("btn-age");
 const hungryEl = document.getElementById("btn-hungry");
 const sleepyEl = document.getElementById("btn-sleepy");
 const boredomEl = document.getElementById("btn-boredom");
 const playEl = document.getElementById("btn-play");
+
+const button = document.querySelector('.myButton');
+ 
+button.addEventListener('click', function() {
+    console.log('button clicked');
+});
