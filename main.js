@@ -33,8 +33,10 @@ const sleepyEl = document.getElementById("btn-sleepy");
 const boredomEl = document.getElementById("btn-boredom");
 const playEl = document.getElementById("btn-play");
 
+// Adding in my click Event Listener for btns 
 const button = document.querySelector('.myButton');
  
-button.addEventListener('click', function() {
+btn.addEventListener('click' , () => {
     console.log('button clicked');
 });
+
