@@ -4,12 +4,14 @@ console.log("is this working")
 // let prince = new Tamagotchi()  
 
 class Tamagotchi {
-    constructor(name, age, hungry, sleepy, boredeom, play) {
+    constructor(start, pause, stop, name, hungry, sleepy, bored, play) {
+        this.start = start;
+        this.pause = pause;
+        this.stop = stop;
         this.name = name;
-        this.age = age;
         this.hungry = hungry;
         this.sleepy = sleepy;
-        this.boredeom = boredeom;
+        this.bored = bored;
         this.play = play;
     }
 
@@ -25,11 +27,13 @@ getName = (e) => {
     console.log("Good Boy")
 }
 
+const startEl = document.getElementById("btn-start");
+const pauseEl = document.getElementById("btn-pause");
+const stopEl = document.getElementById("btn-stop");
 const nameEl = document.getElementById("btn-name");
-const ageEl = document.getElementById("btn-age");
 const hungryEl = document.getElementById("btn-hungry");
 const sleepyEl = document.getElementById("btn-sleepy");
-const boredomEl = document.getElementById("btn-boredom");
+const boredEl = document.getElementById("btn-bored");
 const playEl = document.getElementById("btn-play");
 
 // Adding in my click Event Listener for btns 
