@@ -17,7 +17,7 @@ class Tamagotchi {
 
 }
 
-let prince = new Tamagotchi("Prince", 4, 2, 0, 1, 0);
+let prince = new Tamagotchi(5, 6, 5, "Prince", 4, 2, 0, 1, 0);
 console.log(Tamagotchi);
 
 // letting player add in their own name for game
