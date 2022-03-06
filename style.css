@@ -17,4 +17,6 @@ button:hover {
 
 button {
   text-align: justify;  
+  column-gap: 40rem;
+  flex-wrap: wrap;
 }
