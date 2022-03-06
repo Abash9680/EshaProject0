@@ -45,9 +45,24 @@ const button = document.querySelector('.myButton');
 btn.addEventListener('click' , () => {
     // console.log('button clicked');
 });
+
+// adding count id's to my btns 
+
 let count = 0;
 let myCounter = null;
 console.log(myCounter);
+
+const myCounterSt = document.getElementById("start-count")
+const myCounterPa = document.getElementById("pause-count")
+const myCounterSto = document.getElementById("stop-count")
+const myCounterNa = document.getElementById("name-count")
+const myCounterHu = document.getElementById("hungry-count")
+const myCounterSl = document.getElementById("sleepy-count")
+const myCounterBo = document.getElementById("bored-count")
+const myCounterPl = document.getElementById("play-count")
+
+const startBtn = document.getElementById("start-btn")
+console.log(startbtn)
 
 function pressHungryClick() {
     myCounter = setInterval(function(){
