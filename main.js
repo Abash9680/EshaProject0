@@ -66,6 +66,30 @@ console.log(myCounter);
 
 let started = false
 
+function startBtn() {
+    if(!startBtn) {
+        myCounter = setInterval(function(){
+            num++;
+            stopMycounter()
+            myCounterSt.innerText= num;
+            started = true;
+        },1000);
+    }
+}
+function pFeed (){
+    if (num >1 ){
+        num--
+        myCounterSt.innerText= num;
+    }
+}
+function stopMycounter() {
+    if (num >= 10) {
+        clearInterval(myCounter)
+    }
+}
+
+
+
 function pressHungryClick() {
     myCounter = setInterval(function(){
         count++;
