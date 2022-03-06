@@ -7,3 +7,12 @@ body {
 h1 {
     align-items: center;
 }
+
+button:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+button {
+  text-align: justify;  
+}
