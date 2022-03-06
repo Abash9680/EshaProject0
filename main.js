@@ -48,10 +48,6 @@ btn.addEventListener('click' , () => {
 
 // adding count id's to my btns 
 
-let count = 0;
-let myCounter = null;
-console.log(myCounter);
-
 const myCounterSt = document.getElementById("start-count")
 const myCounterPa = document.getElementById("pause-count")
 const myCounterSto = document.getElementById("stop-count")
@@ -63,6 +59,12 @@ const myCounterPl = document.getElementById("play-count")
 
 const startBtn = document.getElementById("start-btn")
 console.log(startbtn)
+
+let count = 0;
+let myCounter = null;
+console.log(myCounter);
+
+let started = false
 
 function pressHungryClick() {
     myCounter = setInterval(function(){
