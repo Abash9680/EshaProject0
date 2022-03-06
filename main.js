@@ -42,8 +42,12 @@ document.getElementById("prince").addEventListener("submit" , getName);
 
 const button = document.querySelector('.myButton');
  
-btn.addEventListener('click' , () => {
-    // console.log('button clicked');
+startEl.addEventListener('click' , function() {
+    intrevalId = setInterval(function(){
+        count += 1;
+        TimeRanges.textContent = count;
+    },1000);
+
 });
 
 // adding count id's to my btns 
@@ -58,7 +62,7 @@ const myCounterBo = document.getElementById("bored-count")
 const myCounterPl = document.getElementById("play-count")
 
 const startBtn = document.getElementById("start-btn")
-console.log(startbtn)
+// console.log(startbtn)
 
 let count = 0;
 let myCounter = null;
@@ -66,7 +70,7 @@ console.log(myCounter);
 
 let started = false
 
-function startBtn() {
+function pauseBtn() {
     if(!startBtn) {
         myCounter = setInterval(function(){
             num++;
@@ -87,9 +91,6 @@ function stopMycounter() {
         clearInterval(myCounter)
     }
 }
-
-
-
 function pressHungryClick() {
     myCounter = setInterval(function(){
         count++;
