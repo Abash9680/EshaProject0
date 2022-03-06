@@ -12,14 +12,14 @@
     <h1>Your Tamagotchi Likes To Play</h1>
     <h2> Play With Me</h2>
     <h3 id="timer"></h3>
+
+<button id = "clicker" onclick="myFunction()">Name Me</button>
+    <p id="demo"></p>
     
     <div class = "maltese"></div>
     <img src = "https://i.pinimg.com/originals/06/e4/25/06e425052120c2407b9658b5b04b04d1.gif">
 
-    <button id = "clicker" onclick="myFunction()">Name Me</button>
-<p id="demo"></p>
    
-
     <div style = "text-align: center;"></div>
     <!-- <button onclick="" id="btn">Start</button> -->
 
@@ -48,7 +48,7 @@
                 
             }
             else {
-                text = "hi, my name is" + person + "!are you ready to care for me";
+                text = "Hi, My Name Is " + person + "!Are You Ready To Play With Me";
             }
             document.getElementById("demo").innerHTML = text;
         }
