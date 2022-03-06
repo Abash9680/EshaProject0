@@ -56,7 +56,8 @@ function handleStartClick() {
   
   function handleStopClick() {
     clearInterval(myCounter);
-    count = 0;
+    count = 5;
+    count-- >=-1;
     stopEl.innerText = "Count: " + count;
   };
   
@@ -96,7 +97,7 @@ function pauseBtn() {
         },1000);
     }
 }
-function pFeed (){
+function pHunger (){
     if (num >1 ){
         num--
         myCounterSt.innerText= num;
