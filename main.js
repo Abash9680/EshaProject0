@@ -41,14 +41,30 @@ const playEl = document.getElementById("btn-play");
 document.getElementById("prince").addEventListener("submit" , getName);
 
 const button = document.querySelector('.myButton');
- 
-startEl.addEventListener('click' , function() {
-    intrevalId = setInterval(function(){
-        count += 1;
-        TimeRanges.textContent = count;
-    },1000);
 
-});
+function handleStartClick() {
+    
+    myCounter = setInterval(function(){
+     count++;
+     startEl.innerText = "Count: " + count;
+    },1000);
+  };
+  
+  function handlePauseClick() {
+    clearInterval(myCounter);
+  };
+  
+  function handleStopClick() {
+    clearInterval(myCounter);
+    count = 0;
+    stopEl.innerText = "Count: " + count;
+  };
+  
+  startEl.addEventListener('click', handleStartClick);
+  pauseEl.addEventListener('click', handlePauseClick);
+  stopEl.addEventListener('click', handleStopClick); 
+
+
 
 // adding count id's to my btns 
 
