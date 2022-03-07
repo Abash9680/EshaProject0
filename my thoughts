@@ -15,9 +15,14 @@ trying to setInterval for the games basic times and clicks
 Added back the start ,pause and stop buttons for game
 Tried to add in footer and I'm stumped at the closing part of the footer, or maybe I added the href wrong 
 
-Just added in my Linkedin url and the linked work on my console side.
+Was able to add eventListeners to the buttons and my buttons count up but not sure what I'm doing wrong to where it wont stop.
 
-Changed my "name me" button to the top of the game. 
+Can not add count to age. Had to comment it out. 
+
+Just added in my Linkedin url and the linked work on my console side.
+Also added in my personal GitHub link at footer tags 
+
+Changed my "name me" button to the top of the game. Now you have the option to name the pet a name of your choice.
 
 I'm kind of all over the place with my js side but just added back the age id. It's finally making some sense to me
 
@@ -25,3 +30,7 @@ My JS side is not neat how Joel wants it to be but I dnt feel confident to delet
  
  I have fihgured out how to add the count functions,
  maybe because I never added the slee[y, bored and play functions until the last minute. 
+
+ Finally learned some more of the css side. I enjoy the css side of this projects and can not wait for the next projects to jazz new websites or games up. 
+
+ I underlined my h1 and h2 title 
