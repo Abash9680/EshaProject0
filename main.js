@@ -35,6 +35,7 @@ const hungryEl = document.getElementById("btn-hungry");
 const sleepyEl = document.getElementById("btn-sleepy");
 const boredEl = document.getElementById("btn-bored");
 const playEl = document.getElementById("btn-play");
+const ageel = document.getElementById("age")
 
 // Adding in my click Event Listener for btns 
 
@@ -114,3 +115,5 @@ function pressHungryClick() {
         countEl.innerText = "Count: " + count;
     }, 1000);
 };
+
+function ()
