@@ -20,5 +20,6 @@ button {
   column-gap: 40rem;
   align-content: space-around;
   flex-direction: row-reverse;
+  border-radius: 25px;
 
 }
