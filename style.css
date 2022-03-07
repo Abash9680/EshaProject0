@@ -8,7 +8,12 @@ body {
 }
 h1 {
     align-items: center;
+    text-decoration: underline;
 }
+h2 {
+    text-decoration: underline;
+}
+
 
 button:hover {
     cursor: pointer;
@@ -21,5 +26,14 @@ button {
   align-content: space-around;
   flex-direction: row-reverse;
   border-radius: 25px;
+  flex-wrap: wrap;
 
 }
+flex-container {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+  
+  
