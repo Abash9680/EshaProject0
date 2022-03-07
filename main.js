@@ -61,10 +61,89 @@ function handleStartClick() {
     count-- >=-1;
     stopEl.innerText = "Count: " + count;
   };
+
+//   function ageCount() {
+//     myCounter setInterval(function () {
+//       agePet++;
+//       ageCount.innerText = "age:" + agePet;
+//       if (hungry == 10 || sleepy == 10 || bored == 10 || play == 10)
+//       clearInterval(ageCounter);
+//       }, 60000);
+//   }
+
+  function handleHungryClick() {
+    
+    myCounter = setInterval(function(){
+     count++;
+     hungryEl.innerText = "Count: " + count;
+    },1000);
+  };
   
+  function handlePauseClick() {
+    clearInterval(myCounter);
+  };
+
+//   function handleHungryClick() {
+//     setInterval(myCounter);
+//     count = 5;
+//     hungryEl.innerText = "Count: " + count;
+//   };
+
+  function handleSleepyClick() {
+    
+    myCounter = setInterval(function(){
+     count++;
+     sleepyEl.innerText = "Count: " + count;
+    },1000);
+  };
+  
+  function handlePauseClick() {
+    clearInterval(myCounter);
+  };
+
+//   function handleBoredClick() {
+//     clearInterval(myCounter);
+//     count = 5;
+//     boredEl.innerText = "Count: " + count;
+//   };
+
+  function handleBoredClick() {
+    
+    myCounter = setInterval(function(){
+     count++;
+     boredEl.innerText = "Count: " + count;
+    },1000);
+  };
+  
+  function handlePauseClick() {
+    clearInterval(myCounter);
+  };
+  
+//   function handlePlayClick() {
+//     clearInterval(myCounter);
+//     count = 5;
+//     playEl.innerText = "Count: " + count;
+//   };
+
+function handlePlayClick() {
+    
+    myCounter = setInterval(function(){
+     count++;
+     playEl.innerText = "Count: " + count;
+    },6000);
+  };
+  
+  function handlePauseClick() {
+    clearInterval(myCounter);
+  };
+
   startEl.addEventListener('click', handleStartClick);
   pauseEl.addEventListener('click', handlePauseClick);
   stopEl.addEventListener('click', handleStopClick); 
+  hungryEl.addEventListener('click', handleHungryClick); 
+  sleepyEl.addEventListener('click', handleSleepyClick); 
+  boredEl.addEventListener('click', handleBoredClick); 
+  playEl.addEventListener('click', handlePlayClick); 
 
 
 
@@ -109,11 +188,10 @@ function stopMycounter() {
         clearInterval(myCounter)
     }
 }
-function pressHungryClick() {
-    myCounter = setInterval(function(){
-        count++;
-        countEl.innerText = "Count: " + count;
-    }, 1000);
-};
+// function pressHungryClick() {
+//     myCounter = setInterval(function(){
+//         count++;
+//         countEl.innerText = "Count: " + count;
+//     }, 1000);
+// };
 
-function ()
