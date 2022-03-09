@@ -13,6 +13,12 @@ class Tamagotchi {
         this.sleepy = sleepy;
         this.bored = bored;
         this.play = play;
+        this.age = 0
+    }
+// Writing a function thats add 1 to age 
+    agePet(){ 
+      this.age = this.age + 1
+      console.log(this.age)
     }
 
 }
@@ -35,7 +41,7 @@ const hungryEl = document.getElementById("btn-hungry");
 const sleepyEl = document.getElementById("btn-sleepy");
 const boredEl = document.getElementById("btn-bored");
 const playEl = document.getElementById("btn-play");
-const ageel = document.getElementById("age")
+const ageEl = document.getElementById("age")
 
 // Adding in my click Event Listener for btns 
 
@@ -47,6 +53,7 @@ function handleStartClick() {
     
     myCounter = setInterval(function(){
      count++;
+     ageCount()
      startEl.innerText = "Count: " + count;
     },1000);
   };
@@ -62,14 +69,15 @@ function handleStartClick() {
     stopEl.innerText = "Count: " + count;
   };
 
-//   function ageCount() {
-//     myCounter setInterval(function () {
-//       agePet++;
-//       ageCount.innerText = "age:" + agePet;
-//       if (hungry == 10 || sleepy == 10 || bored == 10 || play == 10)
-//       clearInterval(ageCounter);
-//       }, 60000);
-//   }
+  function ageCount() {
+    myCounter = setInterval(function() {
+    //   increment princes age by 1
+    prince.agePet()
+    //   count++;
+      ageEl.innerText = "age: " + prince.age;  // change age pet to variable princes 
+      
+      }, 5000);
+  }
 
   function handleHungryClick() {
     
@@ -157,6 +165,9 @@ const myCounterHu = document.getElementById("hungry-count")
 const myCounterSl = document.getElementById("sleepy-count")
 const myCounterBo = document.getElementById("bored-count")
 const myCounterPl = document.getElementById("play-count")
+const myCounterAg = document.getElementById("age-count")
+
+
 
 const startBtn = document.getElementById("start-btn")
 // console.log(startbtn)
