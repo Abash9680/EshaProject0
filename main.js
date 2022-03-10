@@ -63,15 +63,20 @@ document.getElementById("prince").addEventListener("submit" , getName);
 
 const button = document.querySelector('.myButton');
 
+// age to increment with start button
 function handleStartClick() {
     ageCount()
     hungerCount()
+    sleepyCount()
+    boredCount()
+    playCount()
     startCounter = setInterval(function(){
      count++;
      startEl.innerText = "Count: " + count;
     },1000);
 };
-  
+//  getting hunger to increment by 1
+
 function hungerCount(){
     hungerCounter = setInterval(function(){
         // incrementing hunger count
@@ -80,12 +85,41 @@ function hungerCount(){
      myCounterHu.innerText = "Count: " + count;
     },1000);
 }
+//  getting my sleep to increment 
+
+function sleepyCount(){
+    sleepCounter = setInterval(function(){
+      count++;
+      myCounterSl.innerText = "Count: " + count; 
+    },6000);
+};
+// bored funct to increment
+
+function boredCount(){
+    boredCounter = setInterval(function(){
+        count++;
+        myCounterBo.innerText = "Count: " + count;
+    },6000);
+};
+
+// play func to increment
+
+function playCount(){
+    sleepCounter = setInterval(function(){
+        count++;
+        myCounterPl.innerText = "Count: " + count;
+    },6000);
+};
+
+// all func will stop with pause func
 
 function handlePauseClick() {
     clearInterval(startCounter);
     clearInterval(ageCounter);
     clearInterval(hungerCounter);
     clearInterval(sleepCounter);
+    clearInterval(boredCounter);
+    clearInterval(playCounter);
 };
   
 function handleStopClick() {
