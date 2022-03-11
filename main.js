@@ -54,6 +54,7 @@ const myCounterHu = document.getElementById("hungry")
 const myCounterSl = document.getElementById("sleepy")
 const myCounterBo = document.getElementById("bored")
 const myCounterAg = document.getElementById("age")
+const myPet = document.getElementById("heSurvived")
 
 // Adding in my click Event Listener for btns 
 
@@ -95,6 +96,13 @@ function hungerCount(){
         // incrementing hunger count
     apt++;
     myCounterHu.innerText = "hungry: " + apt;
+    if (apt === 10){
+    clearInterval(hungerCount);
+    myPet.innerText = "Your Pet Died";
+    }
+    // else {
+        // heSurvived.innerText = "Your Pet Died";
+    // }
     },1000);
 }
 //  getting my sleep to increment 
@@ -149,6 +157,7 @@ function handlePauseClick() {
     clearInterval(boredCount);
     // clearInterval(boredCounter);
     // clearInterval(playCounter);
+    
 };
 
 
