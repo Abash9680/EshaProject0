@@ -98,6 +98,8 @@ function hungerCount(){
     myCounterHu.innerText = "hungry: " + apt;
     if (apt === 10){
     clearInterval(hungryCounter);
+    clearInterval(sleepCounter);
+    clearInterval(boredCounter);
     myPet.innerText = "Your Pet Died";
     }
     // else {
@@ -113,6 +115,8 @@ function sleepyCount(){
       myCounterSl.innerText = "sleep: " + bed; 
       if (bed === 10){
         clearInterval(sleepCounter);
+        clearInterval(boredCounter);
+        clearInterval(hungryCounter);
         myPet.innerText = "Your Pet Died";
       }
     },2000);
@@ -125,6 +129,8 @@ function boredCount(){
         myCounterBo.innerText = "bored: " + yawn;
         if (yawn === 10){
             clearInterval(boredCounter);
+            clearInterval(sleepCounter);
+            clearInterval(hungryCounter);
             myPet.innerText = "Your Pet Died";
         }
     },3000);
@@ -180,48 +186,3 @@ function handlePauseClick() {
     feedEl.addEventListener('click', feedClick);
     sleepEl.addEventListener('click', sleepClick);
     playEl.addEventListener('click', playClick); 
-//   hungryEl.addEventListener('click', handleHungryClick); 
-//   sleepyEl.addEventListener('click', handleSleepyClick); 
-//   boredEl.addEventListener('click', handleBoredClick); 
-//   playEl.addEventListener('click', handlePlayClick); 
-
-
-
-// // adding count id's to my btns 
-// const startBtn = document.getElementById("start-btn")
-// // console.log(startbtn)
-
-// let count = 0;
-// let myCounter = null;
-// console.log(myCounter);
-
-// let started = false
-
-// function pauseBtn() {
-//     if(!startBtn) {
-//         myCounter = setInterval(function(){
-//             num++;
-//             stopMycounter()
-//             myCounterSt.innerText= num;
-//             started = true;
-//         },1000);
-//     }
-// }
-// function pHunger (){
-//     if (num >1 ){
-//         num--
-//         myCounterSt.innerText= num;
-//     }
-
-// }
-// function stopMycounter() {
-//     if (num >= 10) {
-//         clearInterval(myCounter)
-//     }
-// }
-// // function pressHungryClick() {
-// //     myCounter = setInterval(function(){
-// //         count++;
-// //         countEl.innerText = "Count: " + count;
-// //     }, 1000);
-// // };
