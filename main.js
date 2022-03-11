@@ -97,7 +97,7 @@ function hungerCount(){
     apt++;
     myCounterHu.innerText = "hungry: " + apt;
     if (apt === 10){
-    clearInterval(hungerCount);
+    clearInterval(hungryCounter);
     myPet.innerText = "Your Pet Died";
     }
     // else {
@@ -111,6 +111,10 @@ function sleepyCount(){
     sleepCounter = setInterval(function(){
       bed++;
       myCounterSl.innerText = "sleep: " + bed; 
+      if (bed === 10){
+        clearInterval(sleepCounter);
+        myPet.innerText = "Your Pet Died";
+      }
     },2000);
 };
 // bored funct to increment
@@ -119,6 +123,10 @@ function boredCount(){
     boredCounter = setInterval(function(){
         yawn++;
         myCounterBo.innerText = "bored: " + yawn;
+        if (yawn === 10){
+            clearInterval(boredCounter);
+            myPet.innerText = "Your Pet Died";
+        }
     },3000);
 };
 
